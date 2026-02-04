@@ -16,7 +16,7 @@ async function searchMovie() {
     const data = await response.json();
 
     if (data.Response === "False") {
-      resultDiv.innerHTML = "<p>Movie not found!</p>";
+      resultDiv.innerHTML = "<p>Movie not found! Please check the spelling.</p>";
       return;
     }
 
